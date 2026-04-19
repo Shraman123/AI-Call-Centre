@@ -1,0 +1,126 @@
+.App {
+  text-align: left;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.dashboard-container {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.sidebar {
+  width: 300px;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.active-calls, .call-list {
+  margin-bottom: 30px;
+}
+
+.active-call, .call-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s;
+}
+
+.call-item:hover {
+  background: #f0f8ff;
+  border-color: #007bff;
+}
+
+.caller-id {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.call-status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.call-status.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.call-status.completed {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.call-details {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.transcript {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-family: monospace;
+}
+
+.agent-message {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.customer-message {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.welcome-screen {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}

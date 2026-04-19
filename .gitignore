@@ -1,0 +1,28 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Database
+call_center.db
+*.sqlite3
+
+# Audio
+*.wav
+*.mp3
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
